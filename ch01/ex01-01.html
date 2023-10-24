@@ -26,6 +26,8 @@
     <li>head 영역에 쓴 script는 HTML 읽기 전이라서 DOM 요소에 접근 불가능하다.</li>
     <li>HTML 엔진(렌더링엔진)이 첫 줄부터 줄 단위로 parsing하고 DOM 객체로 생성 (렌더링) - 자바스크립트 코드(script) 만나면 자바스크립트 엔진이 작업을 수행한다. </li>
     <li>`window.onload`: HTML 모두 parsing 작업을 마친 후 실행</li>
+    <p> window.onload라는 메서드를 오버라이딩(재정의). 해당 함수 내의 코드 스크립트는 웹브라우저 내의 모든 요소가 준비가 되어야 실행할 수 있다.
+      (window라는 객체가 웹 문서를 불러올 때, 문서가 사용되는 시점에 실행되는 onload라는 함수를 재정의)</p>
   </ol>
 
   <script type="text/javascript">
