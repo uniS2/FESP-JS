@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      console.log('Hello Javascript - 5');
+      const btn = document.querySelector('button');
+      btn.addEventListener('click', event => {
+        console.log('버튼 클릭', event.clientX, event.clientY);
+      });
+    }
+  </script>
+  <!--* src: 외부 속성 가져오기 -->
+  <script src="ex01-01.js"></script>
+</head>
+
+<body>
+  <h1>Hello Javascript - 3</h1>
+  <button>클릭</button>
+  <ol>
+    <li>순서대로 parsing 하고 실행됨을 알 수 있다.</li>
+    <li>head 영역에 쓴 script는 HTML 읽기 전이라서 DOM 요소에 접근 불가능하다.</li>
+    <li>HTML 엔진(렌더링엔진)이 첫 줄부터 줄 단위로 parsing하고 DOM 객체로 생성 (렌더링) - 자바스크립트 코드(script) 만나면 자바스크립트 엔진이 작업을 수행한다. </li>
+    <li>`window.onload`: HTML 모두 parsing 작업을 마친 후 실행</li>
+  </ol>
+
+  <script type="text/javascript">
+    console.log('Hello Javascript - 4');
+    // const btn = document.querySelector('button');
+    // btn.addEventListener('click', event => {
+    //   console.log('버튼 클릭', event.clientX, event.clientY);
+    // });
+  </script>
+</body>
+
+</html>
