@@ -21,6 +21,7 @@ var todolist = [
   }
 ]
 
+//# 한 가지 작업에는 한 가지 task만 수행하기 - 유지보수관점에서 주의
 // 완료된 할일 목록
 var doneList = [];
 for (let elem of todolist) {
@@ -39,6 +40,7 @@ for (let elem of todolist) {
 }
 console.log('남은 할일 목록', reaminList);
 
+//# 함수 활용하여 length 메서드 이용하기
 // 남은 할일 수
 var reaminCount = 0;
 for (let elem of todolist) {
